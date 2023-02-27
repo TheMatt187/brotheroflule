@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Cachoros</title>
+    <style type="text/css">
+         :root {
+            background-color: rgb(62, 175, 175);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+            border: 4px black solid;
+            margin: 15px 15px;
+        }
+        
+        button {
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            font-size: 24px;
+            font-family: fantasy;
+            transition: all 2s;
+            color: chartreuse;
+            background-color: rgb(109, 0, 211);
+            font-weight: bolder;
+        }
+        
+        button:hover {
+            transition: all 2s;
+            color: rgb(0, 0, 0);
+            background-color: rgb(0, 55, 254);
+        }
+        
+        div {
+            margin: 15px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button>Gerar imagem</button>
+    </div>
+    <script>
+        const body = document.querySelector("body")
+        const button = document.querySelector("button");
+        const url = "https://dog.ceo/api/breeds/image/random/50"
+
+        button.addEventListener("click", () => {
+            fetch(url)
+                .then(result => result.json())
+                .then(data => {
+                    for (let i = 0; i <= 49; i++) {
+
+                        let img = document.createElement("img")
+                        img.src = data.message[i]
+                        body.appendChild(img)
+                    }
+                })
+                .catch((err) => {
+                    console.log(err)
+                });
+
+        })
+    </script>
+</body>
+
+</html>
