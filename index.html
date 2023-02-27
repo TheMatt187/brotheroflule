@@ -5,124 +5,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <title>Museu Nacional</title>
+    <title>Gerador de Cachoros</title>
+    <style type="text/css">
+         :root {
+            background-color: rgb(62, 175, 175);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+            border: 4px black solid;
+            margin: 15px 15px;
+        }
+        
+        button {
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            font-size: 24px;
+            font-family: fantasy;
+            transition: all 2s;
+            color: chartreuse;
+            background-color: rgb(109, 0, 211);
+            font-weight: bolder;
+        }
+        
+        button:hover {
+            transition: all 2s;
+            color: rgb(0, 0, 0);
+            background-color: rgb(0, 55, 254);
+        }
+        
+        div {
+            margin: 15px auto;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-
-    <div id="container">
-        <!-- inicio container -->
-
-        <header>
-            <div id="logo">
-                <h1>
-                    <a href="">Museu Nacional</a>
-                </h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Exposições</a></li>
-                    <li><a href="">Pesquisas</a></li>
-                    <li><a href="">Acervos</a></li>
-                    <li><a href="">Videos</a></li>
-                    <li><a href="">Fotos</a></li>
-                    <li><a href="">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div id="principal">
-            <div id="conteudos">
-                <section id="" capa>
-                    <img src="img/museu.png" alt="Museu">
-                </section>
-
-                <section id="postagens">
-                    <article id="video">
-                        <h3>Video: Conheça o Museu</h3>
-                        <iframe width="310" height="170" src="https://www.youtube.com/embed/bM9-NeT_GeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </article>
-                    <article id="localizacao">
-                        <h3>Veja a Localização</h3>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14327.585790151838!2d-49.82402024999999!3d-26.134919149999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dd9329561a4e21%3A0xd8ff62ea6cde6fa5!2sGalp%C3%A3o%20do%20gordo!5e0!3m2!1spt-BR!2sbr!4v1673992177573!5m2!1spt-BR!2sbr"
-                            width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </article>
-                    <article id="exposicoes">
-                        <h3>Exposições</h3>
-                        <ul>
-                            <li>
-                                <a href="">Mateus Lindão</a>
-                            </li>
-                            <li>
-                                <a href="">Mateus Lindão</a>
-                            </li>
-                            <li>
-                                <a href="">Mateus Lindão</a>
-                            </li>
-                            <li>
-                                <a href="">Mateus Lindão</a>
-                            </li>
-                        </ul>
-                    </article>
-
-                    <article id="historia">
-                        <h3>200 Anos de história</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda officiis eos accusantium ullam a! Soluta sequi repellendus fugit ipsum laboriosam eligendi similique dolor est praesentium et. Incidunt dignissimos numquam fugit?</p>
-                        <a href=""><strong>Leia Mais!</strong></a>
-                    </article>
-                </section>
-
-
-            </div>
-
-        </div>
-
-        <aside>
-            <section id="depoimento">
-                <img src="./img/depoimento.png" alt="">
-            </section>
-            <section id="visita">
-                <h4>Faça Uma Visita</h4>
-                <form action="">
-                    <fieldset>
-                        <legend>Selecione a data:</legend>
-                        <label for="data">Data</label>
-                        <input class="campo" type="date" id="data">
-                        <label for="qtd">Quantidade de Pessoas</label>
-                        <input class="campo" style="width: 30px;" type="number " id="qtd ">
-                    </fieldset>
-                    <input class="button" type="submit" value="Verificar Disponibilidade">
-                </form>
-            </section>
-            <section id="galeria">
-                <h4>Galeria de Fotos</h4>
-                <a href="">
-                    <img src="./img/imagem1.jpg" height="93" alt="imagemgaleria" width="93">
-                </a>
-                <a href="">
-                    <img src="./img/imagem2.jpg" height="93" alt="imagemgaleria" width="93">
-                </a>
-                <a href="">
-                    <img src="./img/imagem3.jpg" height="93" alt="imagemgaleria" width="93">
-                </a>
-                <a href="">
-                    <img src="./img/imagem4.jpg" height="93" alt="imagemgaleria" width="93">
-                </a>
-
-            </section>
-
-        </aside>
-        <footer style="clear: both;"> &copy; Mateus Alves de Oliveira</footer>
-
+    <div>
+        <button>Gerar imagem</button>
     </div>
-    <!-- fim container -->
+    <script>
+        const body = document.querySelector("body")
+        const button = document.querySelector("button");
+        const url = "https://dog.ceo/api/breeds/image/random/50"
 
+        button.addEventListener("click", () => {
+            fetch(url)
+                .then(result => result.json())
+                .then(data => {
+                    for (let i = 0; i <= 49; i++) {
 
+                        let img = document.createElement("img")
+                        img.src = data.message[i]
+                        body.appendChild(img)
+                    }
+                })
+                .catch((err) => {
+                    console.log(err)
+                });
+
+        })
+    </script>
 </body>
 
 </html>
