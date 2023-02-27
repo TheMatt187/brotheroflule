@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de Cachoros</title>
+    <link rel="shortcut icon" href="https://freepngimg.com/download/dog/163170-photos-puppy-dog-face-png-image-high-quality.png" type="image/x-icon">
+    <title>Dog Generator</title>
     <style type="text/css">
          :root {
             background-color: rgb(30, 245, 11);
@@ -58,6 +59,7 @@
         const url = "https://dog.ceo/api/breeds/image/random/50"
 
         button.addEventListener("click", () => {
+            body.innerHTML = ""
             fetch(url)
                 .then(result => result.json())
                 .then(data => {
